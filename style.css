@@ -429,16 +429,27 @@ svg {
 }
 
 .project-main {
-  background-image: linear-gradient(90deg, white 96%, #70a464 98%, white 100%);
+  /* background-image: linear-gradient(90deg, white 96%, #70a464 98%, white 100%);
   display: grid;
   grid-template-rows: 21.25vh auto;
   z-index: 0;
   position: fixed;
   top: 0;
   height: 100%;
+  width: 67%;
   min-width: 0%;
   overflow: scroll;
-  padding-left: 20px;
+  padding-left: 20px; */
+
+  background-image: linear-gradient(90deg, white 96%, #70a464 98%, white 100%);
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 430px;
+  height: 100%;
+  max-width: 100%;
+  overflow: scroll;
+  /* padding-top: 15vh; */
 }
 
 .breakpoint-project-text-column{
@@ -509,8 +520,17 @@ svg {
 }
 
 .kardashian-project-content img{
-  max-width: 80%;
-  width: 70%;
+  /* max-width: 80%; */
+  width: auto;
+  height: auto;
+}
+
+.kardashian-gifs{
+  width: 480px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Ebadov Specific CSS */
@@ -920,8 +940,9 @@ svg {
       display: flex;
       flex-direction: column;
       position: relative;
+      padding-top: 5%;
       top: 100%;
-      height: 80%;
+      max-height: 80%;
       width: 100%;
     }
 
@@ -933,7 +954,27 @@ svg {
       height: 20px;
       width: 100%;
     }
+    .breakpoint-kardashian-gifs{
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
+    .breakpoint-youtube-kardashian{
+      position: relative;
+      box-sizing: border-box;
+    }
+
+
+    .breakpoint-youtube-kardashian iframe{
+      top:0;
+      left: 0;
+      max-width: 100%;
+      height: 35%;
+      padding-bottom: 20px;
+    }
 
     /* Crud and Japan Video */
     .breakpoint-youtube {
